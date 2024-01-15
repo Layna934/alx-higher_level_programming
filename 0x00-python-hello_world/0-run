@@ -2,7 +2,7 @@
 
 if [ -z "$PYFILE" ]; then
     echo "error"
-    exit 1
+    exit 0
 else
-    python3 "$PYFILE"
+    python3("$PYFILE")
 fi
