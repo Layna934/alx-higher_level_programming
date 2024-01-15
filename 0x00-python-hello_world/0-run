@@ -1,2 +1,8 @@
-#!/usr/bin/python3
-print("Best School")
+#!/bin/bash
+
+if [ -z "$PYFILE" ]; then
+    echo "error"
+    exit 1
+else
+    python3 "$PYFILE"
+fi
