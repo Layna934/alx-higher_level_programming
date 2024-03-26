@@ -6,12 +6,12 @@ if __name__ == "__main__":
 
     num_a = len(argv) - 1
 
-    if num_a == 0:
-        print("0 arguments.")
+    if num_a < 1:
+        print("{} arguments.".format(num_a))
     elif num_a == 1:
-        print("1 argument:")
+        print("{} arguments:".format(num_a))
     else:
         print("{} arguments:".format(num_a))
 
-    for d, j in enumerate(argv[1:]):
-        print("{}: {}".format(d + 1, j))
+    for d in range(num_a):
+        print("{}: {}".format(d + 1, argv[d + 1]))
