@@ -3,5 +3,8 @@
 from sys import argv
 
 if __name__ == "__main__":
-
-    print(sum(map(int, argv[1:])))
+    argc = len(argv)
+    sum = 0
+    for i in range(1, argc):
+            sum += int(argv[i])
+    print(f"{sum}")
