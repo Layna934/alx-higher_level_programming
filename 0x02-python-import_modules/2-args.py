@@ -9,7 +9,7 @@ if __name__ == "__main__":
     if num_a < 1:
         print("{} arguments.".format(num_a))
     elif num_a == 1:
-        print("{} arguments:".format(num_a))
+        print("{} argument:".format(num_a))
     else:
         print("{} arguments:".format(num_a))
 
