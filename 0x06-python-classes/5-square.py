@@ -4,7 +4,7 @@ class Square:
     def __init__(self, size=0):
         self.size = size
 
-    @propery
+    @property
     def size(self):
         return(self.__size)
 
@@ -19,3 +19,12 @@ class Square:
     def area(self):
         area = self.__size * self.__size
         return area
+
+    def my_print(self):
+        for i in range(0, self.__size):
+            for j in range(0, self.__size):
+                print("#", end="")
+            print("")
+
+        if self.__size == 0:
+            print("")
