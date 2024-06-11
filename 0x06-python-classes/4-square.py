@@ -7,7 +7,12 @@ class Square:
     setting attributes and methods for class
     """
     def __init__(self, size=0):
-        """Initializing the square"""
+        """
+        Initializing the square
+        Args:
+            size (int): The size of the new square.
+            position (int, int): The position of the new square.
+        """
         self.size = size
 
     @property
